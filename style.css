@@ -1,0 +1,131 @@
+:root {
+  --jaune:#f71531;
+  --bleu: rgb(15, 15, 173);
+  --rouge: #FD7C06;
+  --vert: #4FCE09;
+  --blanc: white;
+  --noir: #FE52E6;
+}
+/* 4FCE09 vert
+    EBCF08 jaune
+    FD7C06 orange
+    FE52E6 rose
+    FE52E6 violet
+*/
+
+body {
+    font-family: arial;
+    padding: 0;
+    text-align: center;
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+h1 {
+  visibility: hidden;
+}
+
+h4, h5 {
+  margin: 5px;
+}
+
+button {
+  margin: 10px auto;
+}
+
+header {
+  height: 12em;
+}
+
+img {
+  border-radius: 5px;
+}
+
+p {
+  margin: 3px;
+}
+
+section div {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.couleur div {
+  cursor: pointer;
+}
+
+div {
+  clear: both;
+}
+
+#tentative, .couleur {
+  border: 2px solid rgb(10, 95, 207);
+  display: inline-block;
+  width: 120px;
+  margin-top: 10px;
+  padding: 1px;
+  background: rgba(255,255,255, 0.5);
+}
+
+.jaune {
+  background-color: var(--jaune);
+}
+
+.bleu {
+  background-color: var(--bleu);
+}
+
+.rouge {
+  background-color: var(--rouge);
+}
+
+.vert {
+  background-color: var(--vert);
+}
+.blanc {
+  background-color: var(--blanc);
+}
+
+.noir {
+  background-color: var(--noir);
+}
+
+#tentative, .results{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid purple;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255,255,255, 0.5);
+}
+
+#wrapperChoix {
+  display: flex;
+  justify-content: space-around;
+}
+
+#result {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#restart {
+  float: left;
+}
+
+.span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px;
+}

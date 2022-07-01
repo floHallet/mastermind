@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mastermind</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="./mastermind.png" alt="logo"/>
+		<h1>Mastermind</h1>
+	</header>
+
+	<main>
+    <section id="template" hidden>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <button id="restart" onclick="reset()"><h5>Recommencez</h5></button>
+	  <div class="span">Votre Choix :</div>
+		<section id="tentative">
+			<div id="choix1"></div>
+			<div id="choix2"></div>
+			<div id="choix3"></div>
+			<div id="choix4"></div>
+			<div id="choix5"></div>
+		</section>
+		<div>
+			<button onclick="compare()"><h4>Essayez !</h4></button>
+		</div>
+		<div id="wrapperChoix">
+			<section class="couleur" id="couleur1">
+				<div class="jaune"></div>
+				<div class="bleu"></div>
+				<div class="rouge"></div>
+				<div class="vert"></div>
+				<div class="blanc"></div>
+				<div class="noir"></div>
+				<p>Choix 1</p>
+			</section>
+			<section class="couleur" id="couleur2">
+				<div class="jaune"></div>
+				<div class="bleu"></div>
+				<div class="rouge"></div>
+				<div class="vert"></div>
+				<div class="blanc"></div>
+				<div class="noir"></div>
+				<p>Choix 2</p>
+			</section>
+			<section class="couleur" id="couleur3">
+				<div class="jaune"></div>
+				<div class="bleu"></div>
+				<div class="rouge"></div>
+				<div class="vert"></div>
+				<div class="blanc"></div>
+				<div class="noir"></div>
+				<p>Choix 3</p>
+			</section>
+			<section class="couleur" id="couleur4">
+				<div class="jaune"></div>
+				<div class="bleu"></div>
+				<div class="rouge"></div>
+				<div class="vert"></div>
+				<div class="blanc"></div>
+				<div class="noir"></div>
+				<p>Choix 4</p>
+			</section>
+			<section class="couleur" id="couleur5">
+				<div class="jaune"></div>
+				<div class="bleu"></div>
+				<div class="rouge"></div>
+				<div class="vert"></div>
+				<div class="blanc"></div>
+				<div class="noir"></div>
+				<p>Choix 5</p>
+			</section>
+		</div>
+    <div class="span">Tentatives :</div>
+		<div id="result"></div>
+
+	</main>
+
+</body>
